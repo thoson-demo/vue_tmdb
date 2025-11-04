@@ -89,18 +89,23 @@ npm run preview
 
 ```
 vue_tmdb/
-├── public/          # Static files
 ├── src/
-│   ├── assets/      # Images, icons, fonts
-│   ├── components/  # Vue components
-│   ├── views/       # Page components
-│   ├── router/      # Vue Router config
-│   ├── stores/      # Pinia stores
-│   ├── services/    # API services
-│   ├── types/       # TypeScript interfaces
-│   ├── utils/       # Utility functions
-│   ├── App.vue      # Root component
-│   └── main.ts      # Entry point
+│   ├── assets/           # Images, icons, fonts
+│   ├── components/       # Vue components
+│   │   ├── ui/          # Reusable UI components (buttons, inputs, etc.)
+│   │   ├── layout/      # Layout components (header, footer, sidebar)
+│   │   └── movie/       # Movie-specific components
+│   ├── views/           # Page components/views
+│   ├── router/          # Vue Router configuration
+│   ├── stores/          # Pinia stores (state management)
+│   ├── services/        # API services and HTTP clients
+│   ├── composables/     # Vue 3 composables (reusable logic)
+│   ├── types/           # TypeScript interfaces and types
+│   ├── constants/       # App constants and configuration
+│   ├── utils/           # Utility functions and helpers
+│   └── styles/          # Global styles and CSS variables
+├── public/              # Static assets
+└── dist/                # Build output
 ├── index.html
 ├── package.json
 ├── vite.config.ts
