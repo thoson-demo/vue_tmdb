@@ -12,7 +12,7 @@ Design based on Figma template: [Movie App UI Design](https://www.figma.com/comm
 
 ## ✨ Features
 
-- **🏠 Home Page:** 
+- **🏠 Home Page:**
   - Display popular movies list
   - Search movies by title
   - Browse movies by genres
@@ -64,11 +64,12 @@ VITE_TMDB_API_KEY=your_api_key_here
 VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
 ```
 
-*Note: You can get a free API key by registering at [TMDB](https://www.themoviedb.org/settings/api)*
+_Note: You can get a free API key by registering at [TMDB](https://www.themoviedb.org/settings/api)_
 
 ### 4. Run the application
 
 #### Development mode:
+
 ```bash
 npm run dev
 ```
@@ -76,11 +77,13 @@ npm run dev
 The app will be available at `http://localhost:5173`
 
 #### Build for production:
+
 ```bash
 npm run build
 ```
 
 #### Preview production build:
+
 ```bash
 npm run preview
 ```

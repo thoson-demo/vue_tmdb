@@ -1,8 +1,19 @@
-import { ref, computed } from 'vue'
+import { ref, computed, type Ref, type ComputedRef } from 'vue'
 import type { ApiStatus } from '../types'
 
-export function useApi<T>() {
-  const data = ref<T | null>(null)
+export interface UseApiState<T> {
+  data: Ref<T | null>
+  status: Ref<ApiStatus>
+  error: Ref<string | null>
+  isLoading: ComputedRef<boolean>
+  isError: ComputedRef<boolean>
+  isSuccess: ComputedRef<boolean>
+  execute: (apiCall: () => Promise<T>) => Promise<void>
+  reset: () => void
+}
+
+export function useApi<T>(): UseApiState<T> {
+  const data = ref<T | null>(null) as Ref<T | null>
   const status = ref<ApiStatus>('idle')
   const error = ref<string | null>(null)
 
@@ -14,9 +25,9 @@ export function useApi<T>() {
     try {
       status.value = 'loading'
       error.value = null
-      
+
       const result = await apiCall()
-      
+
       data.value = result
       status.value = 'success'
     } catch (err) {

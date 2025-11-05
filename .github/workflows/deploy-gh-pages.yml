@@ -2,7 +2,7 @@ name: Deploy Vite + Vue app to GitHub Pages
 
 on:
   push:
-    branches: [main]  # hoặc 'master' tùy branch chính của bạn
+    branches: [main] # hoặc 'master' tùy branch chính của bạn
 
 permissions:
   contents: read
