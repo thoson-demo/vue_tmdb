@@ -1,14 +1,7 @@
 <script setup lang="ts">
   import { ChevronRightIcon } from '@heroicons/vue/24/outline'
   import MovieCard from './MovieCard.vue'
-
-  interface Movie {
-    id: number
-    title: string
-    posterUrl?: string
-    rating?: number
-    year?: string
-  }
+  import type { Movie } from '../../types/movie'
 
   interface Props {
     title: string
@@ -19,6 +12,14 @@
   withDefaults(defineProps<Props>(), {
     showViewAll: true,
   })
+
+  const emit = defineEmits<{
+    (e: 'movieSelected', id: number): void
+  }>()
+
+  const openMovieDetail = (id: number) => {
+    emit('movieSelected', id)
+  }
 </script>
 
 <template>
@@ -34,10 +35,10 @@
       <MovieCard
         v-for="movie in movies"
         :key="movie.id"
+        :id="movie.id"
         :title="movie.title"
-        :poster-url="movie.posterUrl"
-        :rating="movie.rating"
-        :year="movie.year"
+        :posterPath="movie.poster_path"
+        @click="openMovieDetail(movie.id)"
       />
     </div>
   </section>

@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files => commented out to track .env files in version control
+# .env
+# .env.local
+# .env.*.local

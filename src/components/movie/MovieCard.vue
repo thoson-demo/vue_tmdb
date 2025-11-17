@@ -1,24 +1,51 @@
 <script setup lang="ts">
   import { StarIcon } from '@heroicons/vue/24/solid'
+  import { computed, onMounted } from 'vue'
 
   interface Props {
+    id: number
     title: string
-    posterUrl?: string
+    posterPath?: string | null
     rating?: number
     year?: string
   }
 
   const props = withDefaults(defineProps<Props>(), {
+    id: 0,
     posterUrl: '',
     rating: 0,
     year: '',
   })
+
+  const emit = defineEmits<{
+    (e: 'click', id: number): void
+  }>()
+
+  const handleClick = () => {
+    emit('click', props.id)
+  }
+
+  const imageUrl = computed(() => {
+    const baseUrl = import.meta.env.VITE_TMDB_IMAGE_BASE_URL || ''
+    const url = props.posterPath ? `${baseUrl}/w500${props.posterPath}` : ''
+    console.log('Computed Image URL:', url)
+    return url
+  })
+
+  onMounted(() => {
+    console.log('MovieCard Mounted with ID:', props.id, imageUrl.value)
+  })
 </script>
 
 <template>
-  <div class="movie-card">
+  <div class="movie-card" @click="handleClick">
     <div class="movie-poster">
-      <img v-if="posterUrl" :src="posterUrl" :alt="title" class="poster-img" />
+      <img
+        v-if="props.posterPath"
+        :src="imageUrl"
+        :alt="props.title"
+        class="poster-img"
+      />
       <div v-else class="poster-placeholder">
         <span>No Image</span>
       </div>
