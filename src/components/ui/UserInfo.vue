@@ -6,11 +6,12 @@
     userName?: string
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  withDefaults(defineProps<Props>(), {
     avatarUrl: '',
     userName: 'thoson.it',
   })
 </script>
+
 <template>
   <div class="user-info-container">
     <div class="user-avatar">
