@@ -1,18 +1,18 @@
 export interface Movie {
+  adult: boolean
+  backdrop_path: string | null
+  genre_ids: number[]
   id: number
-  title: string
+  original_language: string
   original_title: string
   overview: string
+  popularity: number
   poster_path: string | null
-  backdrop_path: string | null
   release_date: string
+  title: string
+  video: boolean
   vote_average: number
   vote_count: number
-  popularity: number
-  adult: boolean
-  video: boolean
-  genre_ids: number[]
-  original_language: string
 }
 
 export interface MovieDetails extends Movie {

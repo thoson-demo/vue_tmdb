@@ -1,0 +1,68 @@
+/* src/styles/utilities.css */
+/* Common utility classes */
+
+/* Spacers */
+.spacer {
+  flex: 1;
+}
+
+.spacer-4px {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.spacer-8px {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.spacer-12px {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.spacer-16px {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.spacer-24px {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.spacer-32px {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+/* Gap utilities (for flex/grid containers) */
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
