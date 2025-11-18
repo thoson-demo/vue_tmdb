@@ -6,7 +6,7 @@
   }
 
   const props = withDefaults(defineProps<Props>(), {
-    height: 40,
+    height: 32,
   })
 
   const heightStyle = computed(() => {

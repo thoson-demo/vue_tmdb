@@ -11,7 +11,12 @@
     :disabled="disabled"
     :style="{ color: color || 'var(--md-sys-color-primary)' }"
   >
-    <slot />
+    <span v-if="$slots.icon" class="button-icon">
+      <slot name="icon" />
+    </span>
+    <span class="button-text">
+      <slot />
+    </span>
   </button>
 </template>
 
@@ -26,14 +31,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 40px;
+    min-height: 36px;
     padding: 0 12px;
     gap: 8px;
 
     /* Typography */
     font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     letter-spacing: 0.1px;
     line-height: 20px;
 
@@ -46,6 +51,23 @@
     position: relative;
     overflow: hidden;
     transition: background-color 0.2s ease;
+  }
+  .button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  .button-icon :deep(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-text {
+    display: inline-flex;
+    align-items: center;
   }
 
   /* Hover State - Material Design 3: 8% opacity */

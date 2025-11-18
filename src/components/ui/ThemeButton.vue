@@ -55,8 +55,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border: none;
     border-radius: 50%;
     background-color: var(--md-sys-color-surface-container-high);

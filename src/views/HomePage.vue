@@ -71,6 +71,6 @@
   .home-view {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--md-sys-color-background);
+    background-color: var(--md-sys-color-surface-container-lowest);
   }
 </style>

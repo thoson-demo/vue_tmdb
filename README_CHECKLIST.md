@@ -13,26 +13,26 @@ This guide provides a comprehensive checklist for cloning IMDb website with 2 ma
 
 ### Core Concepts
 
-- [ ] **Component** - Create reusable components (MovieCard, Header, Footer)
-- [ ] **Props** - Pass data from parent to child component
-- [ ] **Emits** - Emit events from child to parent component
-- [ ] **Reactive Data** - `ref()` and `reactive()` to create reactive data
-- [ ] **Computed Properties** - Compute dependent data (filter movies, sorting)
-- [ ] **Methods** - Functions to handle logic (fetch data, handle click)
-- [ ] **Lifecycle Hooks** - `onMounted()`, `onBeforeMount()` to fetch data
+- [x] **Component** - Create reusable components (MovieCard, Header, Footer)
+- [x] **Props** - Pass data from parent to child component
+- [x] **Emits** - Emit events from child to parent component
+- [x] **Reactive Data** - `ref()` and `reactive()` to create reactive data
+- [x] **Computed Properties** - Compute dependent data (filter movies, sorting)
+- [x] **Methods** - Functions to handle logic (fetch data, handle click)
+- [x] **Lifecycle Hooks** - `onMounted()`, `onBeforeMount()` to fetch data
 
 ### Routing
 
-- [ ] **Vue Router** - Navigate between pages
+- [x] **Vue Router** - Navigate between pages
 - [ ] **Router-link** - Navigate without page reload
-- [ ] **Route Params** - Get movie ID from URL (`/movie/:id`)
-- [ ] **Router Navigation** - `$router.push()`, `$router.back()`
-- [ ] **Named Routes** - Name routes for easier management
+- [x] **Route Params** - Get movie ID from URL (`/movie/:id`)
+- [x] **Router Navigation** - `$router.push()`, `$router.back()`
+- [x] **Named Routes** - Name routes for easier management
 
 ### Data Fetching
 
-- [ ] **Axios / Fetch API** - Call API to fetch movie data
-- [ ] **Async/Await** - Handle asynchronous operations
+- [x] **Axios / Fetch API** - Call API to fetch movie data
+- [x] **Async/Await** - Handle asynchronous operations
 - [ ] **Loading State** - Display loading status
 - [ ] **Error Handling** - Handle errors when fetching API
 
@@ -55,7 +55,7 @@ This guide provides a comprehensive checklist for cloning IMDb website with 2 ma
 
 ### Layout Components
 
-- [ ] **AppHeader** - Header with logo, search bar, navigation menu
+- [ ] **AppHeader** - Header with logo, navigation menu, search bar, Language, Theme
 - [ ] **AppFooter** - Footer with links, copyright
 - [ ] **MainLayout** - Layout wrapper for entire app
 - [ ] **Navbar** - Navigation bar with links (Movies, TV Shows, Celebrities)
