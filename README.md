@@ -36,111 +36,111 @@ This project is a comprehensive clone of IMDb with 2 main screens:
 
 ### Core Concepts
 
-- [x] **Component** - Create reusable components (MovieCard, Header, Footer)
-- [x] **Props** - Pass data from parent to child component
-- [x] **Emits** - Emit events from child to parent component
-- [x] **Reactive Data** - `ref()` and `reactive()` to create reactive data
-- [x] **Computed Properties** - Compute dependent data (filter movies, sorting)
-- [x] **Methods** - Functions to handle logic (fetch data, handle click)
-- [x] **Lifecycle Hooks** - `onMounted()`, `onBeforeMount()` to fetch data
+- ✅ **Component** - Create reusable components (MovieCard, Header, Footer)
+- ✅ **Props** - Pass data from parent to child component
+- ✅ **Emits** - Emit events from child to parent component
+- ✅ **Reactive Data** - `ref()` and `reactive()` to create reactive data
+- ✅ **Computed Properties** - Compute dependent data (filter movies, sorting)
+- ✅ **Methods** - Functions to handle logic (fetch data, handle click)
+- ✅ **Lifecycle Hooks** - `onMounted()`, `onBeforeMount()` to fetch data
 
 ### Routing
 
-- [x] **Vue Router** - Navigate between pages
-- [ ] **Router-link** - Navigate without page reload
-- [x] **Route Params** - Get movie ID from URL (`/movie/:id`)
-- [x] **Router Navigation** - `$router.push()`, `$router.back()`
-- [x] **Named Routes** - Name routes for easier management
+- ✅ **Vue Router** - Navigate between pages
+- ⬜ **Router-link** - Navigate without page reload
+- ✅ **Route Params** - Get movie ID from URL (`/movie/:id`)
+- ✅ **Router Navigation** - `$router.push()`, `$router.back()`
+- ✅ **Named Routes** - Name routes for easier management
 
 ### Data Fetching
 
-- [x] **Axios / Fetch API** - Call API to fetch movie data
-- [x] **Async/Await** - Handle asynchronous operations
-- [ ] **Loading State** - Display loading status
-- [ ] **Error Handling** - Handle errors when fetching API
+- ✅ **Axios / Fetch API** - Call API to fetch movie data
+- ✅ **Async/Await** - Handle asynchronous operations
+- ⬜ **Loading State** - Display loading status
+- ⬜ **Error Handling** - Handle errors when fetching API
 
 ### Styling & UI
 
-- [ ] **Scoped CSS** - CSS only applies to current component
-- [ ] **Dynamic Class Binding** - `:class` to bind classes dynamically
-- [ ] **Dynamic Style Binding** - `:style` to bind styles dynamically
-- [ ] **Conditional Rendering** - `v-if`, `v-else`, `v-show`
-- [ ] **List Rendering** - `v-for` to render movie lists
+- ⬜ **Scoped CSS** - CSS only applies to current component
+- ⬜ **Dynamic Class Binding** - `:class` to bind classes dynamically
+- ⬜ **Dynamic Style Binding** - `:style` to bind styles dynamically
+- ⬜ **Conditional Rendering** - `v-if`, `v-else`, `v-show`
+- ⬜ **List Rendering** - `v-for` to render movie lists
 
 ### State Management
 
-- [x] **Pinia** - Manage global state (auth store)
-- [ ] **Composables** - Create reusable logic
+- ✅ **Pinia** - Manage global state (auth store)
+- ⬜ **Composables** - Create reusable logic
 
 ## 🎨 UI Components
 
 ### Layout Components
 
-- [x] **AppBar** - Header with logo, menu, search bar, watchlist, user info
-- [ ] **AppFooter** - Footer with links, copyright, social, get app
-- [ ] **MainLayout** - Layout wrapper for entire app
+- ✅ **AppBar** - Header with logo, menu, search bar, watchlist, user info
+- ⬜ **AppFooter** - Footer with links, copyright, social, get app
+- ⬜ **MainLayout** - Layout wrapper for entire app
 
 ### Home Page Components
 
-- [x] **HeroBanner** - Large banner with featured movie
-- [x] **MovieSection** - Section wrapper for movie lists
-- [x] **MovieCard** - Card displaying basic info (poster, title, rating)
-- [ ] **FilterBar** - Filter bar for movies (genre, year, rating)
-- [ ] **SearchBar** - Movie search input
-- [ ] **LoadingSpinner** - Display while loading data
-- [ ] **Pagination** - Pagination for movie list
+- ✅ **HeroBanner** - Large banner with featured movie
+- ✅ **MovieSection** - Section wrapper for movie lists
+- ✅ **MovieCard** - Card displaying basic info (poster, title, rating)
+- ⬜ **FilterBar** - Filter bar for movies (genre, year, rating)
+- ⬜ **SearchBar** - Movie search input
+- ⬜ **LoadingSpinner** - Display while loading data
+- ⬜ **Pagination** - Pagination for movie list
 
 ### Movie Detail Page Components
 
-- [ ] **MovieHero** - Banner with backdrop image and main info
-- [ ] **MovieInfo** - Detailed info (title, rating, genres, release date)
-- [ ] **MoviePoster** - Large movie poster
-- [ ] **RatingSection** - Rating display with stars/score
-- [ ] **OverviewSection** - Description/synopsis section
-- [ ] **CastList** - Cast list with avatars
-- [ ] **CastCard** - Card for each cast member
-- [ ] **TrailerSection** - Embedded trailer video
-- [ ] **PhotoGallery** - Photo gallery from movie
-- [ ] **ReviewsList** - List of reviews
-- [ ] **ReviewCard** - Card for each review
-- [ ] **SimilarMovies** - Similar movies section
-- [ ] **MovieMeta** - Metadata (director, writer, budget, revenue)
-- [ ] **WatchlistButton** - Button to add to watchlist
+- ⬜ **MovieHero** - Banner with backdrop image and main info
+- ⬜ **MovieInfo** - Detailed info (title, rating, genres, release date)
+- ⬜ **MoviePoster** - Large movie poster
+- ⬜ **RatingSection** - Rating display with stars/score
+- ⬜ **OverviewSection** - Description/synopsis section
+- ⬜ **CastList** - Cast list with avatars
+- ⬜ **CastCard** - Card for each cast member
+- ⬜ **TrailerSection** - Embedded trailer video
+- ⬜ **PhotoGallery** - Photo gallery from movie
+- ⬜ **ReviewsList** - List of reviews
+- ⬜ **ReviewCard** - Card for each review
+- ⬜ **SimilarMovies** - Similar movies section
+- ⬜ **MovieMeta** - Metadata (director, writer, budget, revenue)
+- ⬜ **WatchlistButton** - Button to add to watchlist
 
 ### Shared UI Components
 
-- [x] **Logo** - IMDb logo component
-- [x] **TextButton** - Text button with optional icon
-- [x] **ThemeButton** - Dark/Light theme toggle
-- [x] **UserInfo** - User avatar and name display
-- [ ] **StarRating** - Component to display rating with stars
-- [ ] **Badge** - Badge for genre, rating label
-- [ ] **Button** - Button component with variants
-- [ ] **Modal** - Modal for trailer or login
-- [ ] **Breadcrumb** - Navigation breadcrumb
-- [ ] **ErrorMessage** - Display error messages
-- [ ] **EmptyState** - Display when no data available
+- ✅ **Logo** - IMDb logo component
+- ✅ **TextButton** - Text button with optional icon
+- ✅ **ThemeButton** - Dark/Light theme toggle
+- ✅ **UserInfo** - User avatar and name display
+- ⬜ **StarRating** - Component to display rating with stars
+- ⬜ **Badge** - Badge for genre, rating label
+- ⬜ **Button** - Button component with variants
+- ⬜ **Modal** - Modal for trailer or login
+- ⬜ **Breadcrumb** - Navigation breadcrumb
+- ⬜ **ErrorMessage** - Display error messages
+- ⬜ **EmptyState** - Display when no data available
 
 ## 🔧 Technical Features
 
 ### Functionality
 
-- [ ] **Responsive Design** - Optimize for mobile, tablet, desktop
-- [ ] **Lazy Loading** - Load images on scroll
-- [ ] **Infinite Scroll** - Auto-load more movies on scroll
-- [ ] **Search Functionality** - Real-time movie search
-- [ ] **Filter & Sort** - Filter and sort movies
-- [ ] **Route Transitions** - Animation on page navigation
-- [ ] **Image Optimization** - Placeholder, fallback images
-- [ ] **SEO Meta Tags** - Dynamic meta tags for each page
+- ⬜ **Responsive Design** - Optimize for mobile, tablet, desktop
+- ⬜ **Lazy Loading** - Load images on scroll
+- ⬜ **Infinite Scroll** - Auto-load more movies on scroll
+- ⬜ **Search Functionality** - Real-time movie search
+- ⬜ **Filter & Sort** - Filter and sort movies
+- ⬜ **Route Transitions** - Animation on page navigation
+- ⬜ **Image Optimization** - Placeholder, fallback images
+- ⬜ **SEO Meta Tags** - Dynamic meta tags for each page
 
 ### Data & API
 
-- [x] **Movie Model** - Data structure for movies
-- [x] **API Integration** - Integrate with TMDB API
-- [x] **Axios Interceptors** - Token management and refresh
-- [x] **Service Layer** - Separated API services
-- [ ] **Error Boundaries** - Handle errors gracefully
+- ✅ **Movie Model** - Data structure for movies
+- ✅ **API Integration** - Integrate with TMDB API
+- ✅ **Axios Interceptors** - Token management and refresh
+- ✅ **Service Layer** - Separated API services
+- ⬜ **Error Boundaries** - Handle errors gracefully
 
 ## 🛠️ Tech Stack
 
@@ -306,16 +306,16 @@ vue_tmdb/
 
 ## ✨ Bonus Features (Advanced)
 
-- [ ] User authentication (login/register)
-- [ ] Personal watchlist with local storage/backend
-- [x] Dark/Light theme toggle
-- [ ] Multiple language support (i18n)
-- [ ] Advanced filters (actors, directors, studios)
-- [ ] Movie comparison feature
-- [ ] Social sharing buttons
-- [ ] Comments/Discussion section
-- [ ] Watch providers integration
-- [ ] Keyboard shortcuts
+- ⬜ User authentication (login/register)
+- ⬜ Personal watchlist with local storage/backend
+- ✅ Dark/Light theme toggle
+- ⬜ Multiple language support (i18n)
+- ⬜ Advanced filters (actors, directors, studios)
+- ⬜ Movie comparison feature
+- ⬜ Social sharing buttons
+- ⬜ Comments/Discussion section
+- ⬜ Watch providers integration
+- ⬜ Keyboard shortcuts
 
 ## 📚 Learning Resources
 
