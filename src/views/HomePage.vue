@@ -6,6 +6,7 @@
   import MovieSection from '../components/movie/MovieSection.vue'
   import { movieService } from '../services/tmdb/movie.service'
   import type { Movie } from '../types'
+  import AppFooter from '../components/layout/AppFooter.vue'
 
   const discoverMovies = ref<Movie[]>([])
   const loading = ref(false)
@@ -64,6 +65,7 @@
       :movies="discoverMovies"
       @movieSelected="openMovieDetail"
     />
+    <AppFooter />
   </div>
 </template>
 
